@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDG Connect - The Ultimate Hub for Google Developer Groups</title>
+    <meta name="description" content="GDG Connect is the comprehensive platform for Google Developer Groups to connect, learn, and grow together." />
+    <meta name="author" content="GDG Connect" />
+    <meta property="og:image" content="/og-image.png" />
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=SF+Pro+Display:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- Navbar -->
+      <header class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <div class="logo-icon">
+              <div class="logo-blue"></div>
+              <div class="logo-red"></div>
+              <div class="logo-yellow"></div>
+              <div class="logo-green"></div>
+            </div>
+            <span class="logo-text">GDG Connect</span>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#events" class="nav-link">Events</a>
+            <a href="#resources" class="nav-link">Resources</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+
+          <div class="nav-buttons">
+            <button class="btn btn-ghost">Sign In</button>
+            <button class="btn btn-primary">Join Community</button>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button class="mobile-menu-btn">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <div class="mobile-menu-container">
+            <a href="#" class="mobile-nav-link">Home</a>
+            <a href="#events" class="mobile-nav-link">Events</a>
+            <a href="#resources" class="mobile-nav-link">Resources</a>
+            <a href="#blog" class="mobile-nav-link">Blog</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            
+            <div class="mobile-buttons">
+              <button class="btn btn-outline-full">Sign In</button>
+              <button class="btn btn-primary-full">Join Community</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="bg-elements">
+          <div class="bg-circle bg-blue"></div>
+          <div class="bg-circle bg-green"></div>
+          <div class="bg-circle bg-yellow"></div>
+          <div class="bg-circle bg-red"></div>
+        </div>
+
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="chip chip-blue fade-in delay-100">
+                Connecting Developers Worldwide
+              </div>
+              
+              <h1 class="hero-title fade-up">
+                <span>The Ultimate Hub for</span>
+                <br />
+                <span class="text-gradient">Google Developer Groups</span>
+              </h1>
+              
+              <p class="hero-description fade-up delay-200">
+                Connect, learn, and grow with the global GDG community. Access events, resources, and networking opportunities all in one place.
+              </p>
+              
+              <div class="hero-buttons fade-up delay-300">
+                <button class="btn btn-primary btn-large btn-hover-effect">
+                  Join Community
+                </button>
+                <button class="btn btn-outline btn-large">
+                  Explore Events
+                </button>
+              </div>
+              
+              <div class="member-count fade-in delay-400">
+                <div class="member-avatars">
+                  <div class="avatar avatar-blue">K</div>
+                  <div class="avatar avatar-red">M</div>
+                  <div class="avatar avatar-green">L</div>
+                  <div class="avatar avatar-yellow">+</div>
+                </div>
+                <span class="member-text">
+                  Join <strong>10k+</strong> developers
+                </span>
+              </div>
+            </div>
+            
+            <!-- Hero image -->
+            <div class="hero-image scale-in">
+              <div class="image-container">
+                <img 
+                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                  alt="GDG Community Event" 
+                  class="main-image lazy-image"
+                />
+                
+                <!-- Floating elements -->
+                <div class="floating-card floating-card-top fade-up delay-500">
+                  <div class="floating-icon floating-icon-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+                      <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="floating-title">Join our next event</p>
+                    <p class="floating-subtitle">400+ attending</p>
+                  </div>
+                </div>
+                
+                <div class="floating-card floating-card-bottom fade-up delay-600">
+                  <div class="floating-icon floating-icon-green">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+                      <path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="floating-title">GDG Community</p>
+                    <p class="floating-subtitle">150+ chapters</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" class="scroll-icon" viewBox="0 0 24 24">
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features" id="features">
+        <div class="container">
+          <div class="section-header">
+            <span class="chip chip-green">Platform Features</span>
+            <h2 class="section-title">Everything you need to <span class="text-gradient">connect & grow</span></h2>
+            <p class="section-description">
+              GDG Connect brings together the best tools and features for Google Developer Groups and tech enthusiasts.
+            </p>
+          </div>
+
+          <div class="features-grid" id="features-grid">
+            <!-- Features cards will be added dynamically by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section class="events-section" id="events">
+        <div class="container">
+          <div class="section-header">
+            <span class="chip chip-blue">Events</span>
+            <h2 class="section-title">Upcoming <span class="text-gradient">GDG Events</span></h2>
+            <p class="section-description">
+              Connect with the community at local and global events hosted by Google Developer Groups.
+            </p>
+            
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-filter="all">All Events</button>
+              <button class="filter-btn" data-filter="Conference">Conferences</button>
+              <button class="filter-btn" data-filter="Workshop">Workshops</button>
+              <button class="filter-btn" data-filter="Meetup">Meetups</button>
+            </div>
+          </div>
+
+          <div class="events-grid" id="events-grid">
+            <!-- Events cards will be added dynamically by JavaScript -->
+          </div>
+          
+          <div class="events-footer">
+            <button class="btn btn-secondary">View All Events</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resources Section -->
+      <section class="resources-section" id="resources">
+        <div class="container">
+          <div class="section-header">
+            <span class="chip chip-red">Resources</span>
+            <h2 class="section-title">Learn & <span class="text-gradient">Grow</span> Your Skills</h2>
+            <p class="section-description">
+              Access curated learning resources, tutorials, and workshops created by Google Developer Experts.
+            </p>
+          </div>
+
+          <div class="resources-grid" id="resources-grid">
+            <!-- Resources cards will be added dynamically by JavaScript -->
+          </div>
+          
+          <div class="resources-cta">
+            <div class="cta-card">
+              <span class="chip chip-yellow">Hands-on Learning</span>
+              <h3 class="cta-title">Interactive Coding Playground</h3>
+              <p class="cta-description">
+                Practice coding exercises, solve challenges, and build projects directly in your browser.
+              </p>
+              <button class="btn btn-primary">
+                Try Coding Playground
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section class="blog-section" id="blog">
+        <div class="container">
+          <div class="section-header">
+            <span class="chip chip-yellow">Blog</span>
+            <h2 class="section-title">Latest from the <span class="text-gradient">GDG Blog</span></h2>
+            <p class="section-description">
+              Stay updated with the latest tech trends, tutorials, and insights from the Google Developer community.
+            </p>
+          </div>
+
+          <div class="blog-grid" id="blog-grid">
+            <!-- Blog cards will be added dynamically by JavaScript -->
+          </div>
+          
+          <div class="blog-footer">
+            <button class="btn btn-secondary">View All Articles</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="chip chip-green">Contact Us</span>
+            <h2 class="section-title">Get in <span class="text-gradient">Touch</span></h2>
+            <p class="section-description">
+              Have questions about GDG Connect or want to join our community? Reach out to us!
+            </p>
+          </div>
+          
+          <div class="contact-grid">
+            <div class="contact-form-wrapper">
+              <div class="contact-form-card">
+                <form id="contactForm">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      class="form-input"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      class="form-input"
+                      placeholder="Enter your email ID"
+                    />
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows="5"
+                      class="form-textarea"
+                      placeholder="What would you like to know?"
+                    ></textarea>
+                  </div>
+                  
+                  <button 
+                    type="submit" 
+                    class="btn btn-primary btn-full" 
+                    id="submitButton"
+                  >
+                    Send Message
+                  </button>
+
+                  <div id="submitSpinner" class="submit-spinner hidden">
+                    <div class="spinner"></div>
+                    <span>Sending...</span>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <div class="contact-info-wrapper">
+              <div class="contact-info-card">
+                <h3 class="contact-info-title">Connect With Us</h3>
+                
+                <div class="contact-info-items">
+                  <div class="contact-info-item">
+                    <div class="contact-icon contact-icon-blue">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="contact-item-title">Email Us</h4>
+                      <p class="contact-item-value">geethikaadasari@gmail.com</p>
+                    </div>
+                  </div>
+                  
+                  <div class="contact-info-item">
+                    <div class="contact-icon contact-icon-green">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+                        <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="contact-item-title">Visit Us</h4>
+                      <p class="contact-item-value">Find a GDG chapter near you</p>
+                    </div>
+                  </div>
+                  
+                  <div class="contact-info-item">
+                    <div class="contact-icon contact-icon-red">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+                        <path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="contact-item-title">FAQ</h4>
+                      <p class="contact-item-value">Check out our frequently asked questions</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="social-links">
+                  <h4 class="social-title">Follow Us</h4>
+                  <div class="social-icons">
+                    <a href="#" class="social-icon">
+                      <span class="sr-only">Twitter</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                      </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <span class="sr-only">GitHub</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                      </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <span class="sr-only">YouTube</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+                        <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" />
+                        <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z" />
+                      </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <span class="sr-only">LinkedIn</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+                        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-about">
+              <div class="logo footer-logo">
+                <div class="logo-icon">
+                  <div class="logo-blue"></div>
+                  <div class="logo-red"></div>
+                  <div class="logo-yellow"></div>
+                  <div class="logo-green"></div>
+                </div>
+                <span class="logo-text">GDG Connect</span>
+              </div>
+              
+              <p class="footer-description">
+                The ultimate platform for Google Developer Groups to connect, learn, and grow together.
+              </p>
+              
+              <div class="footer-social">
+                <a href="#" class="footer-social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon" viewBox="0 0 24 24">
+                    <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                  </svg>
+                </a>
+                <a href="#" class="footer-social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon" viewBox="0 0 24 24">
+                    <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                  </svg>
+                </a>
+                <a href="#" class="footer-social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon" viewBox="0 0 24 24">
+                    <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                  </svg>
+                </a>
+                <a href="#" class="footer-social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="footer-icon" viewBox="0 0 24 24">
+                    <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <div class="footer-links">
+              <h3 class="footer-title">Platform</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="footer-link">Community Hub</a></li>
+                <li><a href="#events" class="footer-link">Events</a></li>
+                <li><a href="#resources" class="footer-link">Learning Resources</a></li>
+                <li><a href="#blog" class="footer-link">Tech Blog</a></li>
+                <li><a href="#" class="footer-link">Hackathons</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-links">
+              <h3 class="footer-title">Resources</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="footer-link">Google Developers</a></li>
+                <li><a href="#" class="footer-link">Google I/O</a></li>
+                <li><a href="#" class="footer-link">GDG Community</a></li>
+                <li><a href="#" class="footer-link">Developer Console</a></li>
+                <li><a href="#" class="footer-link">Analytics</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-links">
+              <h3 class="footer-title">Company</h3>
+              <ul class="footer-menu">
+                <li><a href="#" class="footer-link">About Us</a></li>
+                <li><a href="#" class="footer-link">Careers</a></li>
+                <li><a href="#" class="footer-link">Partners</a></li>
+                <li><a href="#contact" class="footer-link">Contact Us</a></li>
+                <li><a href="#" class="footer-link">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p class="copyright">
+              © <span id="currentYear"></span> GDG Connect. All rights reserved.
+            </p>
+            
+            <div class="footer-legal">
+              <a href="#" class="legal-link">Privacy Policy</a>
+              <a href="#" class="legal-link">Terms of Service</a>
+              <a href="#" class="legal-link">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Toast Message -->
+      <div id="toast" class="toast">
+        <div class="toast-icon toast-success">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+            <path d="M20 6L9 17l-5-5" />
+          </svg>
+        </div>
+        <div class="toast-content">
+          <p id="toastMessage">Message sent successfully!</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
